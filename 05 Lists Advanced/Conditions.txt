@@ -1,0 +1,109 @@
+Trains
+You will receive how many wagons the train has. Create a list with that length with all zeros. Until you receive the command "End", you get some of the following commands:
+•	add {people} -> adds the people in the last wagon
+•	insert {index} {people} -> adds the people at the given wagon
+•	leave {index} {people} -> removes the people from the wagon
+After you receive the "End" command print the train.
+
+Todo List
+You will receive a todo-notes until you get the command "End". The notes will be in the format: "{importance}-{value}". Return the list of todo-notes sorted by importance. The maximum importance will be 10
+
+Palindrome Strings
+Write a program that receives on the first line words separated by a space and a searched palindrome on the second. Print all the palindromes on the first line. Print all the occurrences of the searched palindrome in the format: "Found palindrome {count} times"
+
+Even Numbers
+Write a program that reads a single string with numbers separated by comma and space ", ". Print the indices of all even numbers.
+
+The Office
+You Will Receive Two Lines of Input: a List of Employee's Happiness As String with Numbers Separated by a Single Space and a Happiness Improvement Factor (Single Number). Your Task is to Find Out If the Employees Are Generally Happy in Their Office. To Do That You Have to Increase Their Happiness by Multiplying the All the Employee's Happiness (the Numbers from the List) by the Factor, Filter the Employees Which Happiness is Greater Than or Equal to the Average in the New List and Print the Result
+There are two types of output:
+•	If the half or more of the employees have happiness >= than the average: "Score: {happy_count}/{total_count}. Employees are happy!"
+•	Otherwise: "Score: {happy_count}/{total_count}. Employees are not happy!"
+
+Which Are In?
+Given two lists of strings print a new list of the strings that contains words from the first list which are substrings of any of the strings in the second list (only unique values).
+Input
+There will be 2 lines of input: the two lists separated by ", "
+Output
+Print the resulting list on the console
+
+Big Numbers Lover
+You will receive a single line containing numbers separated by a single space. Form the biggest number possible from them by sorting them as strings.
+
+Next Version
+You will be given a version as in this example: "1.3.4". You have to find the next version and print it ("1.3.5" from the example). The only rule is that the numbers cannot be greater than 9. If that happens, set the current number to 0 and increase the number before it. For more clarification, see the examples. 
+Note: there will be no case where the first number will get greater than 9.
+
+Office Chairs
+You will be given a number n representing how many rooms there are. On the next n lines for each room you will get how many chairs there are and how many of them will be taken. The chairs will be represented by "X"s, then there will be a space " " and a number representing the taken places. Example: "XXXXX 4" (5 chairs and 1 of them is left free). Keep track of the free chairs, you will need them later. However if you get to a room where there are more people than chairs, print the following message: "{needed_chairs_in_room} more chairs needed in room {number_of_room}". If there is enough chairs in each, room print: "Game On, {total_free_chairs} free chairs left"
+
+Electron Distribution
+The rules for electron distribution are as follows:
+•	Maximum number of electrons in a shell is distributed with a rule of 2n^2 (n being position of a shell a.k.a. the list index + 1).
+•	For example, maximum number of electrons in 3rd shield is 2*3^2 = 18.
+•	Electrons should fill the lowest level shell first.
+•	If the electrons have completely filled the lowest level shell, the other unoccupied electrons will fill the higher-level shell and so on.
+
+Group of 10's
+Write a program that receives a list of numbers (string containing integers separated by ", ") and prints lists with the numbers them into lists of 10's. 
+Examples:
+•	The numbers 2 8 4 3 fall into the group under 10
+•	The numbers 13 19 14 15 fall into the group under 20
+
+Decipher This!
+You are given a secret message you need to decipher. Here are the things you need to know to decipher it:
+For each word:
+•	the second and the last letter are switched (e.g. Hello becomes Holle)
+•	the first letter is replaced by its character code (e.g. H becomes 72)
+
+Moving Target
+You are at the shooting gallery again and you need a program that helps you keep track of moving targets. On the first line, you will receive a sequence of targets with their integer values, split by a single space. Then, you will start receiving commands for manipulating the targets, until the "End" command. The commands are the following:
+•	Shoot {index} {power}
+•	Shoot the target at the index, if it exists by reducing its value by the given power (integer value).A target is considered shot when its value reaches 0.
+•	Remove the target, if it is shot.
+•	Add {index} {value}
+•	Insert a target with the received value at the received index, if it exist. If not, print: "Invalid placement!"
+•	Strike {index} {radius}
+•	Remove the target at the given index and the ones before and after it depending on the radius, if such exist. If any of the indices in the range is invalid print:
+"Strike missed!" and skip this command.
+•	End
+•	Print the sequence with targets in the following format:
+{target1}|{target2}…|{targetn}
+Input / Constraints
+•	On the first line you will receive the sequence of targets – integer values [1-10000].
+•	On the next lines, until the "End" will be receiving the command described above – strings.
+•	There will never be a case when "Strike" command would empty the whole sequence.
+Output
+•	Print the appropriate message in case of "Strike" command if necessary.
+•	In the end, print the sequence of targets in the format described above.
+
+Heart Delivery
+You will receive a string with even integers, separated by a "@". This is our neighborhood. After that, a series of Jump commands will follow, until you receive "Love!" Every house in the neighborhood needs a certain number of hearts delivered by Cupid, in order to be able to celebrate Valentine’s Day. Those needed hearts are indicated by the integers in the neighborhood.
+Cupid starts at the position of the first house (index 0) and must jump by a given length. The jump commands will be in this format: "Jump {length}". 
+Every time he jumps from one house to another, the needed hearts for the visited house are decreased by 2. If the needed hearts for a certain house become equal to 0 , print on the console "Place {houseIndex} has Valentine's day." If Cupid jumps to a house where the needed hearts are already 0, print on the console "Place {houseIndex} already had Valentine's day.".
+Keep in mind that Cupid can have a bigger jump length than the size of the neighborhood and if he does jump outside of it, he should start from the first house again. 
+Input
+•	On the first line, you will receive a string with even integers separated by "@" – the neighborhood and the number of hearts for each house.
+•	On the next lines, until "Love!" is received, you will be getting jump commands in this format: "Jump {length}".
+Output
+At the end print Cupid's last position and whether his mission was successful or not:
+•	"Cupid's last position was {lastPositionIndex}."
+•	If each house has had a Valentine's day, print: 
+o	"Mission was successful."
+•	If not, print the count of all houses that didn`t celebrate a Valentine's Day:
+o	"Cupid has failed {houseCount} places."
+Constraints
+•	The neighborhood`s size will be in the range [1…20]
+•	Each house will need an even number of hearts in the range [2 … 10]
+•	Each jump length will be an integer in the range [1 … 20]
+
+Inventory
+Input / Constraints
+You will receive a journal with some collecting items, separated with ', ' (comma and space). After that, until receiving "Craft!" you will be receiving different commands. 
+Commands (split by " - "):
+•	"Collect - {item}" – Receiving this command, you should add the given item in your inventory. If the item already exists, you should skip this line.
+•	"Drop - {item}" – You should remove the item from your inventory, if it exists.
+•	"Combine Items - {oldItem}:{newItem}" – You should check if the old item exists, if so, add the new item after the old one. Otherwise, ignore the command.
+•	"Renew – {item}" – If the given item exists, you should change its position and put it last in your inventory.
+Output
+After receiving "Craft!" print the items in your inventory, separated by ", “(comma and space).
