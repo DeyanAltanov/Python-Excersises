@@ -1,0 +1,17 @@
+
+Global window
+This part will create a canvas file that will be responsible for the tk object. We will use the file to import the tk wherever it is needed.
+
+Login and register
+Create a file called "authentication.py" and a directory called db with the files "user_credentials_db.txt" and "users.txt" for storing the data. Below, you can find the flow that should be implemented.
+The two buttons lead to different forms – login form and register form. 
+When a username and password are entered, it should check from the user credentials file if such a username and password combination exist. If so, let the user to the product screen (we will implement that later). If the username and/or password is invalid, a message should appear:
+"Invalid username/password"
+It should save the user's information to the file "users" as a dictionary (hint look for json.dumps and how you can store complex objects in files) and the credentials in the "credentials" file. After that, it should render the user to the login page.
+
+List all product
+This is the list view. It should be rendered with data, fetched from products.py which you have to create.
+
+Validations to all of the fields and cases you can think of – last_name, first_name length, a unique username, password validation for length and special characters and etc.
+•	Better "CSS" – to actually rearrange the grid and colors so that they provide a better user experience 
+•	Admin part for adding products – here you may change the "users.txt" structur
