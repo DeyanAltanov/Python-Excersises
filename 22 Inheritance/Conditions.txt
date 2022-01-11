@@ -1,0 +1,96 @@
+Single Inheritance
+In a folder called project create two files: animal.py and dog.py.
+In the animal.py file create a class called Animal with a single public method eat() that returns: "eating…". In the dog.py file create a class called Dog with a single public method bark() that returns: "barking…".
+Dog should inherit from Animal.
+
+Multiple Inheritance
+In a folder called project create three files: person.py and employee.py and teacher.py.
+In each file create its corresponding class - Person, Employee and Teacher. 
+Person with a single public method sleep() that returns: "sleeping..."
+Employee with a single public method get_fired() that returns: "fired..."
+Teacher with a single public method teach() that returns: "teaching..."
+Teacher should inherit from Person and Employee.
+
+Hierarchical Inheritance
+In a folder called project create three files: animal.py and dog.py and cat.py.
+In each file create its corresponding class - Animal, Dog and Cat. 
+Animal with a single public method eat() that returns: "eating..."
+Dog with a single public method bark() that returns: "barking..."
+Cat with a single public method meow() that returns: "meowing..."
+Dog and Cat should inherit from Animal.
+
+Random List
+Create a RandomList class that has all the functionality of a List.
+Add additional function that returns and removes a random element from the list.
+•	Public method: get_random_element()
+
+Stack of Strings
+Create a class Stack which can store only strings and has the following functionality:
+•	Public field: data: list
+•	Public method: push(item)
+•	Public method: pop()
+•	Public method: peek()
+•	Public method: is_empty(): returns boolean
+Override the string method to return the stack data.
+
+Person
+You are asked to model an application for storing data about people. You should be able to have a Person and a Child. The child derives from the person. Every person has public attributes name and age. Your task is to model the application.
+Create a Child class that inherits Person and has the same constructor definition. However, do not copy the code from the Person class - reuse the Person class's constructor.
+
+Zoo
+Each of the classes, except the Animal class, should inherit from another class. The Animal class should have private attribute name - string and getter for the name.
+Every class should have constructor, which accepts one parameter: name
+
+Players and Monsters
+Create a class Hero. It should contain the following attributes:
+•	username - string
+•	level - int
+Override the __repr__() method of the base class so it returns: "{name} of type {class_name} has level {level}"
+
+Need for Speed
+Create a base class Vehicle. It should contain the following attributes:
+•	DEFAULT_FUEL_CONSUMPTION - float (constant)
+•	fuel_consumption - float
+•	fuel - float
+•	horse_power - int
+•	A public constructor which accepts (fuel, horse_power) and set the default fuel consumption on the attribute fuel_consumption
+The class should have the following methods:
+•	drive(kilometers)
+o	The drive method should have a functionality to reduce the fuel based on the travelled kilometers and fuel consumption. Keep in mind that you can drive the vehicle only if you have enough fuel to finish the driving.
+The default fuel consumption for Vehicle is 1.25. Some of the classes have different default fuel consumption:
+•	SportCar - DEFAULT_FUEL_CONSUMPTION = 10
+•	RaceMotorcycle - DEFAULT_FUEL_CONSUMPTION = 8
+•	Car - DEFAULT_FUEL_CONSUMPTION = 3
+
+Restaurant
+The Product class should have the following attributes and subsequent getters:
+•	name - string
+•	price - float
+Beverage and Food classes are products. 
+The Beverage class should have the following attributes and subsequent getters:
+•	name - string
+•	price - float
+•	milliliters - float
+The Food class should have the following attributes and subsequent getters:
+•	name - string
+•	price - float
+•	grams - float
+HotBeverage and ColdBeverage are beverages and they accept the following parameters upon initialization: name, price, milliliters
+Coffee and Tea are hot beverages and they accept the following parameters upon initialization: 
+name, price, milliliters
+The Coffee class should have the following additional attributes and subsequent getters:
+•	MILLILITERS = 50 (constant)
+•	PRICE = 3.50 (constant)
+•	caffeine - float
+MainDish, Dessert and Starter are food. They all accept the following parameters upon initialization: name, price, grams. 
+Dessert should accept one more parameter in its constructor:
+•	calories - float
+Create a getter for the attribute calories.
+Make Salmon, Soup and Cake inherit MainDish, Starter and Dessert classes respectively.
+A Cake must have the following attributes upon initialization:
+•	GRAMS = 250 (constant)
+•	CALORIES = 1000 (constant)
+•	PRICE = 5 (constant)
+A Salmon should have the following attributes upon initialization:
+•	GRAMS = 22 (constant)
+Note: All of the attributes need to be private!
