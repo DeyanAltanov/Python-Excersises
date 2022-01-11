@@ -1,0 +1,174 @@
+Bakery
+You will receive a single line containing some food (keys) and quantities (values). They will be separated by a single space (the first element is the key, the second – the value and so on). Create a dictionary with all the keys and values and print it on the console.
+
+Stock
+You will be given key-value pairs of products and quantities (on a single line separated by space). On the next line you will be given products to search for. Check for each product, you have 2 possibilities:
+•	If you have the product, print "We have {quantity} of {product} left"
+•	Otherwise, print "Sorry, we don't have {product}"
+
+Statistics
+You will be receiving key-value pairs on separate lines separated by ": " until you receive the command "statistics". Sometimes you may receive a product more than once. In that case you have to add the new quantity to the existing one. When you receive the "statistics" command, print the following:
+"Products in stock:
+- {product1}: {quantity1}
+- {product2}: {quantity2}
+…
+Total Products: {count_all_products}
+Total Quantity: {sum_all_quantities}"
+
+Odd Occurrences
+Write a program that extracts all elements from a given sequence of words that are present in it an odd number of times (case-insensitive).
+•	Words are given on a single line, space separated.
+•	Print the result elements in lowercase, in their order of appearance.
+
+Word Synonyms
+Write a program, which keeps a dictionary with synonyms. The key of the dictionary will be the word. The value will be a list of all the synonyms of that word. You will be given a number n – the count of the words. After each word, you will be given a synonym, so the count of lines you have to read from the console is 2 * n. You will be receiving a word and a synonym each on a separate line like this:
+•	{word}
+•	{synonym}
+If you get the same word twice, just add the new synonym to the list. 
+Print the words in the following format:
+{word} - {synonym1, synonym2… synonymN}
+
+Count Chars in a String
+Write a program that counts all characters in a string except for space (' '). 
+Print all the occurrences in the following format:
+{char} -> {occurrences}
+
+A Miner Task
+You will be given a sequence of strings, each on a new line. Every odd line on the console is representing a resource (e.g. Gold, Silver, Copper, and so on) and every even – quantity. Your task is to collect the resources and print them each on a new line.
+Print the resources and their quantities in the following format:
+{resource} –> {quantity}
+The quantities will be in the range [1 … 2 000 000 000]
+
+Legendary Farming
+You've done all the work and the last thing left to accomplish is to own a legendary item. However, it's a tedious process and it requires quite a bit of farming. Anyway, you are not too pretentious – any legendary item will do. The possible items are:
+•	Shadowmourne – requires 250 Shards;
+•	Valanyr – requires 250 Fragments;
+•	Dragonwrath – requires 250 Motes;
+Shards, Fragments and Motes are the key materials and everything else is junk. You will be given lines of input, in the format: 
+2 motes 3 ores 15 stones
+Keep track of the key materials - the first one that reaches the 250 mark, wins the race. At that point you have to print that the corresponding legendary item is obtained. Then, print the remaining shards, fragments, motes, ordered by quantity in descending order, then by name in ascending order, each on a new line. Finally, print the collected junk items in alphabetical order.
+Input
+•	Each line comes in the following format: {quantity} {material} {quantity} {material} … {quantity} {material}
+Output
+•	On the first line, print the obtained item in the format: {Legendary item} obtained!
+•	On the next three lines, print the remaining key materials in descending order by quantity
+•	If two key materials have the same quantity, print them in alphabetical order
+•	On the final several lines, print the junk items in alphabetical order
+•	All materials are printed in format {material}: {quantity}
+•	The output should be lowercase, except for the first letter of the legendary
+
+Orders
+Write a program that keeps information about products and their prices. Each product has a name, a price and a quantity. If the product doesn't exist yet, add it with its starting quantity.
+If you receive a product, which already exists, increase its quantity by the input quantity and if its price is different, replace the price as well.
+You will receive products' names, prices and quantities on new lines. Until you receive the command "buy", keep adding items. When you do receive the command "buy", print the items with their names and total price of all the products with that name. 
+Input
+•	Until you receive "buy", the products will be coming in the format: "{name} {price} {quantity}".
+•	The product data is always delimited by a single space.
+Output
+•	Print information about each product in the following format: 
+"{productName} -> {totalPrice}"
+•	Format the average grade to the 2nd digit after the decimal separator.
+
+Parking
+Write a program, which validates a parking place for an online service. Users can register to park and unregister to leave.
+The program receives 2 types of commands:	
+•	"register {username} {licensePlateNumber}":
+•	The system only supports one car per user at the moment, so if a user tries to register another license plate, using the same username, the system should print:
+"ERROR: already registered with plate number {licensePlateNumber}"
+•	If the aforementioned checks passes successfully, the plate can be registered, so the system should print:
+ "{username} registered {licensePlateNumber} successfully"
+•	"unregister {username}":
+•	If the user is not present in the database, the system should print:
+"ERROR: user {username} not found"
+•	If the aforementioned check passes successfully, the system should print:
+"{username} unregistered successfully"
+After you execute all of the commands, print all the currently registered users and their license plates in the format: 
+•	"{username} => {licensePlateNumber}"
+Input
+•	First line: n – number of commands – integer
+•	Next n lines: commands in one of the two possible formats:
+•	Register: "register {username} {licensePlateNumber}"
+•	Unregister: "unregister {username}"
+The input will always be valid and you do not need to check it explicitly.
+
+Courses
+Write a program that keeps information about courses. Each course has a name and registered students.
+You will be receiving a course name and a student name, until you receive the command "end". Check if such course already exists, and if not, add the course. Register the user into the course. When you receive the command "end", print the courses with their names and total registered users, ordered by the count of registered users in descending order. For each contest print the registered users ordered by name in ascending order.
+Input
+•	Until the "end" command is received, you will be receiving input in the format: "{courseName} : {studentName}".
+•	The product data is always delimited by " : ".
+Output
+•	Print the information about each course in the following the format: 
+"{courseName}: {registeredStudents}"
+•	Print the information about each student, in the following the format:
+"-- {studentName}"
+
+Student Academy
+Write a program that keeps information about students and their grades. 
+You will receive n pair of rows. First you will receive the student's name, after that you will receive his grade. Check if the student already exists and if not, add him. Keep track of all grades for each student.
+When you finish reading the data, keep the students with average grade higher than or equal to 4.50. Order the filtered students by average grade in descending order.
+Print the students and their average grade in the following format:
+{name} –> {averageGrade}
+Format the average grade to the 2nd decimal place.
+
+Company Users
+Write a program that keeps information about companies and their employees. 
+You will be receiving a company name and an employee's id, until you receive the command "End" command. Add each employee to the given company. Keep in mind that a company cannot have two employees with the same id.
+When you finish reading the data, order the companies by the name in ascending order. 
+Print the company name and each employee's id in the following format:
+{companyName}
+-- {id1}
+-- {id2}
+-- {idN}
+Input / Constraints
+•	Until you receive the "End" command, you will be receiving input in the format: "{companyName} -> {employeeId}".
+•	The input always will be valid.
+
+ForceBook
+The force users are struggling to remember which side are the different forceUsers from, because they switch them too often. So you are tasked to create a web application to manage their profiles. You should store an information for every unique forceUser, registered in the application.
+You will receive several input lines in one of the following formats:
+{forceSide} | {forceUser}
+{forceUser} -> {forceSide}
+The forceUser and forceSide are strings, containing any character. 
+If you receive forceSide | forceUser, you should check if such forceUser already exists, and if not, add him/her to the corresponding side. 
+If you receive a forceUser -> forceSide, you should check if there is such a forceUser already and if so, change his/her side. If there is no such forceUser, add him/her to the corresponding forceSide, treating the command as a new registered forceUser.
+Then you should print on the console: "{forceUser} joins the {forceSide} side!" 
+You should end your program when you receive the command "Lumpawaroo". At that point you should print each force side, ordered descending by forceUsers count, than ordered by name. For each side print the forceUsers, ordered by name.
+In case there are no forceUsers in a side, you shouldn`t print the side information. 
+Input / Constraints
+•	The input comes in the form of commands in one of the formats specified above.
+•	The input ends, when you receive the command "Lumpawaroo".
+Output
+•	As output for each forceSide, ordered descending by forceUsers count, then by name,  you must print all the forceUsers, ordered by name alphabetically.
+•	The output format is:
+Side: {forceSide}, Members: {forceUsers.Count}
+! {forceUser}
+! {forceUser}
+! {forceUser}
+•	In case there are NO forceUsers, don`t print this side. 
+
+Exam Results
+You will be receiving lines in the following format: "{username}-{language}-{points}" until you receive "exam finished". You should store each username and his submissions and points. 
+You can receive a command to ban a user for cheating in the following format: "{username}-banned". In that case, you should remove the user from the contest, but preserve his submissions in the total count of submissions for each language.
+After receiving "exam finished" print each of the participants, ordered descending by their max points, then by username, in the following format:
+Results:
+{username} | {points}
+…
+After that print each language, used in the exam, ordered descending by total submission count and then by language name, in the following format:
+Submissions:
+{language} – {submissionsCount}
+…
+Input / Constraints
+Until you receive "exam finished" you will be receiving participant submissions in the following format: "{username}-{language}-{points}".
+You can receive a ban command -> "{username}-banned"
+The points of the participant will always be a valid integer in the range [0-100];
+Output
+•	Print the exam results for each participant, ordered descending by max points and then by username, in the following format: 
+Results:
+{username} | {points}
+…
+•	After that print each language, ordered descending by total submissions and then by language name, in the following format:
+Submissions:
+{language} – {submissionsCount}
+…
+•	Allowed working time / memory: 100ms / 16MB.
