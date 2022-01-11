@@ -1,0 +1,5 @@
+{"id": 1, "name": "Axe", "img_path": "Axe.png", "count": 19}
+{"id": 2, "name": "Chainsaw", "img_path": "Chainsaw.png", "count": 13}
+{"id": 3, "name": "Hammer", "img_path": "Hammer.png", "count": 46}
+{"id": 4, "name": "Chopper", "img_path": "Chopper.png", "count": 86}
+{"id": 5, "name": "Knife", "img_path": "Knife.png", "count": 97}
