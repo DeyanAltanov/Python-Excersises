@@ -1,0 +1,71 @@
+Absolute Values
+Write a program that receives a list of numbers and prints their absolute value.
+
+Rounding
+Write a program that rounds all the given numbers.
+
+Multiplication Function
+Write a function called multiply that can receive any amount of numbers as different parameters and returns the result of the multiplication of all of them. Submit only your function in judge.
+
+Operate
+Write a function called operate that receives an operator (+, -, * or /) as first argument and multiple numbers as additional arguments (*args). The function should return the result of the operator applied to all the numbers. For more clarification, see the examples below. Submit only the function in the judge system.
+Note: Be careful when you have multiplication and division
+
+Person Info
+Write a function called get_info that receives a name, age and town, and returns a string in the format: 
+"This is {name} from {town} and he is {age} years old". Use dictionary unpacking when testing your function. Submit only the function in the judge system.
+
+Character Combinations
+Write a program that reads a single string and prints all the possible combinations of the characters in that string. Submit your solution in the judge system.
+
+Chairs
+Write a program that receives names on the first line (separated by comma and space ", ") and number of chairs on the second line (an integer). Find all the ways to fit those people on the chairs. Print each combination on a separate line.
+Note: In the example below, "Peter, George" is same as "George, Peter", so we only print the first combination
+
+Expressions
+Write a program that generates all the possible expressions and their results between a given list of numbers using only the + and - operators. Print them on the console as shown in the example
+
+Even Numbers
+Write a program that receives a list of numbers. Print only the even numbers from the list.
+
+Sort
+Write a program that prints a sorted list of numbers in ascending order. 
+
+Min Max and Sum
+Write a program that prints the min and max values from a list and the sum of all the numbers in the list.
+
+Negative vs Positive
+You will receive a list of numbers. Separate the negative numbers from the positive. Find the total sum of the negatives and positives, replace the negative number with its absolute value and print the following:
+If the absolute negative number is bigger than the positive number:
+	"The negatives are stronger than the positives"
+If the positive number is bigger than the absolute negative number:
+	"The positives are stronger than the negatives"
+
+Odd or Even
+You will receive a command and a list of numbers:
+If the command is "Odd": Print the sum of the Odd numbers multiplied by the length of the initial list.
+If the command is "Even": Print the sum of the Even numbers multiplied by the length of the initial list.
+
+Arguments Length
+Create a function called args_length that returns the number of arguments. Submit only the function in the judge system.
+
+Concatenate
+Write a function called concatenate() that receives some strings, concatenates them and returns the result.
+
+Even or Odd
+Create a function called even_odd that can receive different amount of numbers and a command at the end. The command can be "even" or "odd". Filter the numbers depending on the command and return them in a list. Submit only the function in the judge system.
+
+Function Executor
+Create a function called func_executor that can receive different number of tuples, each of which will have exactly 2 elements: first will be a function and the second will be a tuple of the arguments that need to be passed to that function. Create a list, which will contain all the results of the executed functions with its corresponding arguments. For more clarification, see the examples below. Submit only your function in the judge system.
+
+Keyword Arguments Length
+Create a function called kwargs_length, which can receive different amount of keyword arguments and returns their length. Submit only the function in the judge system.
+
+Age Assignment
+Create a function called age_assignment that receives different number of names and then different number of key-value pairs. The key will be a single letter (first letter of a name), and the value a number (age). For each name, find its first letter in the key-value pairs and assign the age to the person's name. At the end return a dictionary with all the names and ages as shown in the example. Submit only the function in the judge system.
+
+Recursion Palindrome
+Write a recursive function called palindrome, which will receive a word and an index (always 0). Implement the function, so it returns "{word} is a palindrome" if the word is a palindrome and "{word} is not a palindrome" if the word is not a palindrome using recursion. Submit only the function in the judge system.
+
+Recursive Power
+Create a recursive function called recursive_power, which should receive a number and a power. Using recursion return the result of number ** power. Submit only the function in the judge system.
