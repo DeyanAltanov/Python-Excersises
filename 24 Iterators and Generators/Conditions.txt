@@ -1,0 +1,47 @@
+Custom Range
+Create a class called custom_range that receives start and end upon initialization. Implement the __iter__ and __next__ methods, so the iterator returns the numbers from the start to the end (inclusive).
+
+Reverse Iter
+Create a class called reverse_iter which should receive an iterable upon initialization. Implement the __iter__ and __next__ methods, so the iterator returns the items of the iterable in reversed order.
+
+Vowels
+Create a class called vowels which should receive a stirng. Implement the __iter__ and __next__ methods, so the iterator returns only the vowels from the string.
+
+Squares
+Create a generator function called squares that should receive a number n. It should generate the squares of all numbers from 1 to n (inclusive).
+
+Generator Range
+Create a generator function called genrange that receives a start and an end. It should generate all the numbers from the start to the end (inclusive).
+
+Reverse string
+Create a generator function called reverse_text that receives a string and yield all string characters in reversed order.
+
+Take Skip
+Create a class called take_skip. Upon initialization it should receive a step (number) and a count (number). Implement the __iter__ and __next__ functions. The iterator should return the count numbers (starting from 0) with the given step. 
+
+Dictionary Iterator
+Create a class called dictionary_iter. Upon initialization it should receive a dictionary object. Implement the iterator, so it returns each key-value pair of the dictionary as a tuple of two elements (the key and the value).
+
+Countdown Iterator
+Create a class called countdown_iterator. Upon initialization it should receive a count. Implement the iterator, so it returns each number of the countdown (from count to 0 inclusive).
+
+Sequence Repeat
+Create a class called sequence_repeat which should receive a sequence and a number upon initialization. Implement an iterator to return the given elements the defined number of times. If the number is greater than the number of elements, then the sequence repeats as necessary.
+
+Take Halves
+Implement the three generator functions:
+•	integers() - generates an infinite amount of integers (starting from 1)
+•	halves() - generates the halves of those integers (each integer / 2)
+•	take(n, seq) - takes the first n halves of those integers
+
+Fibonacci Generator
+Create a generator function called fibonacci() that generates the Fibonacci numbers infinitely (starting from 0). Each Fibonacci number is created by the sum of the current number with the previous.
+
+Reader
+Create a generator function called read_next() which should receive different number of arguments (all iterable). On each iteration it should return the next element from the current iterable, or the first element from the subsequent iterable.
+
+Prime Numbers
+Create a generator function called get_primes() which should receive a list of integer numbers and return a list containing only the prime numbers from the initial list. 
+
+Possible permutations
+Create a generator function called possible_permutations() which should receive a list and return lists with all possible permutations between it's elements.
