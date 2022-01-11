@@ -1,0 +1,74 @@
+ASCII Values
+Write program that receives a list of characters and creates a dictionary with each character as a key and its ASCII value as a value. Try solving that problem using comprehensions.
+
+No Vowels
+Using a comprehension write a program that receives a text and removes all the vowels from it, case insensitive. Print the new text string after removing the vowels. The vowels that should be considered are 'a', 'o', 'u', 'e', 'i'.
+
+Even Matrix
+Write a program that receives a matrix of numbers and prints a new one only with the numbers that are even. Use nested comprehension for that problem.
+
+Flattening Matrix
+Write a program that receives a matrix and prints the flattened version of it (a list with all the values). For example, the flattened list of the matrix: [[1, 2], [3, 4]] will be [1, 2, 3, 4].
+
+Filter Numbers
+You will be given a start and an end. Print all the numbers in the given range (inclusive) that are divisible by any of the numbers from 2 to 10. Use comprehensions for this problem.
+
+Word Filter
+Using a comprehension, write a program that receives some text, separated by space, and take only those words, whose length is even. Print each word on a new line.
+
+Words Lengths
+Using a list comprehension, write a program that receives some text, separated by comma and space ", ", and prints on the console each string with its length in the following format:
+"{first_str} -> {first_str_len}, {second_str} -> {second_str_len},…"
+
+Capitals
+Using a dictionary comprehension, write a program that receives country names on the first line, separated by comma and space ", ", and their corresponding capital cities on the second line (again separated by comma and space ", ") and prints each country, with their capital, on a separate line in the following format:
+"{country} -> {capital}"
+
+Number Classification
+Using a list comprehension, write a program that receives numbers, separated by comma and space ", ", and prints all the positive, negative, even and odd numbers on separate lines as shown below.
+Note: Zero is counted for a positive number
+
+Diagonals
+Using a nested list comprehension, write a program that reads NxN matrix, finds its diagonals, prints them and their sum as shown below.
+
+Matrix of Palindromes
+Write a program to generate the following matrix of palindromes of 3 letters with r rows and c columns like the one in the examples below.
+•	Rows define the first and the last letter: row 0  'a', row 1  'b', row 2  'c', …
+•	Columns + rows define the middle letter: 
+•	column 0, row 0  'a', column 1, row 0  'b', column 2, row 0  'c', …
+•	column 0, row 1  'b', column 1, row 1  'c', column 2, row 1  'd', …
+Input
+•	The numbers r and c stay at the first line at the input.
+•	r and c are integers.
+
+Flatten Lists
+Write a program to flatten several lists of numbers, received in the following format:
+•	String with numbers or empty strings separated by '|'.
+•	Values are separated by spaces (' ', one or several)
+•	Order the output list from the last to the first received, and their values from left to right as shown below.
+
+Heroes Inventory
+Using a comprehension, write a program that receives a hero's names and items that need to be added in their inventory (item name and item cost). Print the total amount of items with their total cost for each hero.
+Input
+•	On the first line, you will receive the names of the heroes separated by comma and space ", "
+•	On the next lines until the command "End", you will be given items with their cost in the following format: "{name}-{item}-{cost}". If an item already exists in the hero's inventory - ignore it.
+Output
+•	For each hero, print his name, the total items and the total cost of the items in the format: "{name} -> Items: {items_count}, Cost: {items_cost}"
+
+Bunker
+Using a comprehension, write a program that finds the number of given items in a bunker and their average quality. 
+On the first line, you will be given all item categories present in the bunker, then you will be given a number (n). On the next "n" lines, you will be given different items in the following format:
+"{category} - {item_name} - quantity:{item_quantity};quality:{item_quality}"
+Store that information, you will need it later. After you receive all the inputs, print the total amount of items (sum the quantities) in the format:
+"Count of items: {count}"
+After that, print the average quality of all items in the following format, formatted to the second digit:
+"Average quality: {quality sum/categories count}"
+Finally, print all categories with the items on separate lines in the format:
+"{category} -> {item1}, {item2}, …".
+
+Matrix Modification
+Write a program that reads a matrix from the console. On the first line, you will get the matrix's rows. On next rows lines, you will get elements for each column, separated with space. You will be receiving commands in the following format:
+•	Add {row} {col} {value} – Increase the number at the given coordinates with the value.
+•	Subtract {row} {col} {value} – Decrease the number at the given coordinates by the value.
+If the coordinate is invalid, you should print "Invalid coordinates".
+When you receive "END", you should print the matrix and stop the program.
