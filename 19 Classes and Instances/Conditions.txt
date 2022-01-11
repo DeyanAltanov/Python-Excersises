@@ -1,0 +1,99 @@
+Smartphone
+Create a class called Smartphone. Upon initialization it should receive a memory (number). It should also have 2 other attributes: apps (empty list by default) and is_on (False by default). Create 3 methods:
+-	power() - sets is_on on True if the phone is off, otherwise sets it to False
+-	install(app, app_memory)
+o	If there is enough memory on the phone and it is on, install the app (add it to apps and decrease the memory of the phone) and return "Installing {app}"
+o	If there is enough memory, but the phone is off, return "Turn on your phone to install {app}"
+o	Otherwise return "Not enough memory to install {app}"
+-	status() - returns "Total apps: {total_apps_count}. Memory left: {memory_left}"
+
+Vet
+Create a class called Vet. Upon initialization it should receive a name (string). It should also have an instance attribute called animals (empty list by default). There should also be 2 class attributes: animals (empty list) which will store the total amount of animals for all vets; space (5 by default). You have to create 3 more instance methods
+-	register_animal(animal_name)
+o	If there is space in the vet clinic add the animal to both animals lists and return a message: "{name} registered in the clinic"
+o	Otherwise return "Not enough space"
+-	unregister_animal(animal_name)
+o	If the animal is in the relevant vet list, remove it from both animals lists and return "{animal} unregistered successfully"
+o	Otherwise, return "{animal} not in the clinic"
+-	info() - returns "{vet_name} has {amount_of_his_animals} animals. {space_left_in_clinic} space left in clinic"
+
+Glass
+Create a class called Glass. Upon initialization it will not receive any parameters, you must create however an instance attribute called content which should be equal to 0. You should also create a class attribute called capacity which should be 250 ml. Create 3 more instance methods:
+-	fill(ml) - fill the glass with the given milliliters if there is enough space in it and return "Glass filled with {ml} ml", otherwise return "Cannot add {ml} ml"
+-	empty() - empty the glass and return "Glass is now empty" 
+-	info() - returns info about the glass in the format "{space_left} ml left"
+
+Point
+Create a class called Point. Upon initialization it should receive x and y (numbers). Create 3 instance methods:
+-	set_x(new_x) - changes the x value of the point
+-	set_y(new_y) - changes the y value of the point
+-	distance(x, y) - returns the distance between the point and the provided coordinates
+
+Circle
+Create a class called Circle. Upon initialization it should receive a radius (number). Create a class attribute called pi which should be equal to 3.14. Create 3 instance methods:
+-	set_radius(new_radius) - changes the radius
+-	get_area() - returns the area of the circle
+-	get_circumference() - returns the circumference of the circle
+The area should be rounded to the 2nd decimal.
+
+Account
+Create a class called Account. Upon initialization it should receive id (number), name (string), balance (number; optional; 0 by default). The class should also have 3 instance methods:
+-	credit(amount) - add the amount to the balance and return the new balance
+-	debit(amount) - if the amount is less than or equal to the balance, reduce the balance by the amount and return the new balance. Otherwise return "Amount exceeded balance"
+-	info() - returns "User {name} with account {id} has {balance} balance"
+
+Employee
+Create class Employee. Upon initialization, it should receive id (number), first_name (string), last_name (string), salary (number). Create 3 more instance methods:
+-	get_full_name() - returns "{first_name} {last_name}"
+-	get_annual_salary() - returns the salary for 12 months
+-	raise_salary(amount) - increase the salary by the given amount and return the new salary
+
+Time
+Create a class called Time. Upon initialization, it should receive hours, minutes and seconds (numbers). The class should also have class attributes max_hours equal to 23, max_minutes equal to 59 and max_seconds equal to 59. You should also create 3 instance methods:
+-	set_time(hours, minutes, seconds) - update the time with the new values
+-	get_time() - returns "{hh}:{mm}:{ss}"
+-	next_second() - update the time with one second (use the class attributes for validation) and return the new time (using the get_time() method)
+
+Pizza Delivery
+Create a class called PizzaDelivery. Upon initialization it should receive name(string), price(float) and ingredients (dict). The class should also have an attribute ordered set to False by default. You should also create 3 instance methods:
+-	add_extra(ingredient: str, quantity: int, ingredient_price: float):
+o	if we already have this ingredient in our pizza increase the ingredient quantity with the given one and update the pizza price by adding the amount for the additional ingredients
+o	if we don't have this ingredient in our pizza, we should add it and update the pizza price
+
+-	remove_ingredient(ingredient: str, quantity: int, ingredient_price: float):
+o	if we don't have this ingredient in our pizza, we should return the following message "Wrong ingredient selected! We do not use {ingredient} in {name}!"
+o	if we have the ingredient, but we try to remove more than we have available we should return the following message "Please check again the desired quantity of {ingredient}!", otherwise remove the given quantity of the ingredient and update the pizza price
+
+-	make_order() - set the attribute ordered to True and return the following message "You've ordered pizza {name} prepared with {all ingredients and their quantities separated with coma and space} and the price will be {price}lv.". Please have in mind that once the pizza is ordered no further changes are allowed. We should return the following message if the customer tries to change it: "Pizza {name} already prepared and we can't make any changes!"
+
+Library
+Create class called Library, where the information regarding the users and books rented/available will be stored. Create another one called User, where the information for each of the library users will be stored: user id, username and file with records of the books rented by the current user.
+Class Library
+Upon initialization you won't receive anything. The class should have the following attributes: 
+o	user_records - empty list which will store the users (users objects) of the library
+o	books_available - empty dictionary which will keep information regarding the authors (key: str) and the books available for each of the authors (list of strings)
+o	rented_books - empty dictionary with usernames for keys and another dictionary as value in which the book names will be the keys and days to return (number) the value ({usernames: {book names: days left}}).
+You should also create 3 instance methods:
+-	add_user(user: User):
+o	add the user if we do not have him/her in the library records already, otherwise return the message "User with id = {user_id} already registered in the library!"
+
+-	remove_user(user: User):
+o	remove the user from the library records if available and his rented books (if any), otherwise return the message "We could not find such user to remove!"
+
+-	change_username(user_id: int, new_username: str):
+o	change the username with the new provided and return the message "Username successfully changed to: {new_username} for userid: {user_id}" if there is a  record with the same user id in the library and the username is different than the provided one. Change his username in the rented_books dictionary as well (if present).
+o	If the username is the same for this id return the following message "Please check again the provided username - it should be different than the username used so far!".
+o	If there is no record for the provided id return "There is no user with id = {user_id}!"
+Class User
+Upon initialization it should receive user_id(int) and username(string). The class should also have an attribute books which will be an empty list at the beginning. You should also create 3 instance methods:
+-	get_book(author: str, book_name: str, days_to_return: int, library: Library):
+o	if the book is available in the library add it to the books list for this user, update the library records (rented_books and available_books dicts) and return the following message: "{book_name} successfully rented for the next {days_to_return} days!"
+o	If the book is not available in the library, do nothing
+o	if it's already rented return the following message "The book "{book_name}" is already rented and will be available in {days_to_return provided by the user rented the book} days!"
+
+-	return_book(author:str, book_name:str, library: Library):
+o	if the book is in the user's books list return it in the library (update books_available and rented_books class attributes) and remove it from the books list for this user
+o	otherwise return the following message "{username} doesn't have this book in his/her records!"
+
+-	info() - return a string containing the books currently rented by the user in ascending order separated by comma and space.
+-	You should also override the __string__ method in order to get a string in the following format "{user_id}, {username}, {books}"
